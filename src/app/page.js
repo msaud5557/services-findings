@@ -20,6 +20,7 @@ export default function Home() {
   const [userLocation, setUserLocation] = useState(null);
   const [filteredDoctors, setFilteredDoctors] = useState(doctors);
   const [isLoading, setIsLoading] = useState(false);
+  const [nearbyRadius, setNearbyRadius] = useState(10);
 
   const calculateDistance = (lat1, lon1, lat2, lon2) => {
     const R = 6371; // Earth radius in km
@@ -64,7 +65,7 @@ export default function Home() {
             doctor.location.lng
           ),
         }))
-        .filter((doctor) => doctor.distance < 10)
+        .filter((doctor) => doctor.distance < nearbyRadius)
         .sort((a, b) => a.distance - b.distance);
     }
 
@@ -74,7 +75,7 @@ export default function Home() {
     }, 500);
 
     return () => clearTimeout(timer);
-  }, [searchTerm, selectedService, showNearby, userLocation]);
+  }, [searchTerm, selectedService, showNearby, userLocation, nearbyRadius]);
 
   const toggleNearby = () => {
     if (!userLocation) {
@@ -120,6 +121,36 @@ export default function Home() {
                 toggleNearby={toggleNearby}
                 userLocation={userLocation}
               />
+              {showNearby && userLocation && (
+                <div className="relative">
+                  <select
+                    value={nearbyRadius}
+                    onChange={(e) => setNearbyRadius(Number(e.target.value))}
+                    className="appearance-none bg-indigo-50 border border-indigo-300 text-indigo-900 px-4 py-2 pr-8 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 transition-all duration-200"
+                  >
+                    {[5, 10, 20, 30, 40, 50].map((km) => (
+                      <option key={km} value={km}>
+                        {km} km
+                      </option>
+                    ))}
+                  </select>
+                  <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3 text-indigo-500">
+                    <svg
+                      className="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              )}
             </div>
           </div>
 
@@ -137,7 +168,7 @@ export default function Home() {
             )}
             {showNearby && userLocation && (
               <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm flex items-center">
-                <FaMapMarkerAlt className="mr-1" /> Nearby (10km)
+                <FaMapMarkerAlt className="mr-1" /> Nearby ({nearbyRadius}km)
               </span>
             )}
           </div>
