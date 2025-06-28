@@ -17,6 +17,23 @@ const Filters = ({
     "Joint Replacement",
     "Arthroscopy",
     "Fracture Care",
+    "Arthroscopy",
+    "Fracture Care",
+    "Brain MRI",
+    "Stroke Care",
+    "Epilepsy Treatment",
+    "Sinus Surgery",
+    "Hearing Loss",
+    "Allergy Treatment",
+    "Eye Checkup",
+    "Cataract Surgery",
+    "Glaucoma Treatment",
+    "Teeth Cleaning",
+    "Braces",
+    "Root Canal",
+    "Depression Treatment",
+    "Anxiety Management",
+    "Therapy",
     // Add more services as needed
   ];
 
