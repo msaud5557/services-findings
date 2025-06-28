@@ -71,8 +71,8 @@ export const doctors = [
     services: ["Depression Treatment", "Anxiety Management", "Therapy"],
     phone: "+923001234584",
     location: {
-      lat: 31.502645,
-      lng: 74.425237,
+      lat: 31.398723,
+      lng: 74.168136,
     },
     rating: 4.9,
     experience: "16 years",
@@ -84,8 +84,8 @@ export const doctors = [
     services: ["Diet Plan", "Weight Loss", "Diabetes Diet"],
     phone: "+923001234585",
     location: {
-      lat: 31.502645,
-      lng: 74.425237,
+      lat: 31.403646,
+      lng: 74.166029,
     },
     rating: 4.7,
     experience: "7 years",
