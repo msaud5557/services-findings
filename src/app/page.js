@@ -6,12 +6,7 @@ import DoctorCard from "@/components/DoctorCard";
 import SearchBar from "@/components/SearchBar";
 import Filters from "@/components/Filters";
 import LocationButton from "@/components/LocationButton";
-import {
-  FaClinicMedical,
-  FaMapMarkerAlt,
-  FaSearch,
-  FaFilter,
-} from "react-icons/fa";
+import { FaTools, FaMapMarkerAlt, FaSearch, FaFilter } from "react-icons/fa";
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -88,19 +83,18 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50">
       <div className="container mx-auto px-4 py-12">
-        {/* Hero Section */}
         <div className="text-center mb-12 animate-fade-in">
           <h1 className="text-4xl md:text-5xl font-bold text-indigo-900 mb-4">
-            Find the <span className="text-indigo-600">Best Doctors</span> Near
-            You
+            Find{" "}
+            <span className="text-indigo-600">Trusted Service Providers</span>{" "}
+            Near You
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Book appointments with top-rated specialists in your area. Quality
-            healthcare at your fingertips.
+            Connect with top-rated professionals for all your home service
+            needs. Quality services at your fingertips.
           </p>
         </div>
 
-        {/* Search and Filter Section */}
         <div className="bg-white rounded-xl shadow-lg p-6 mb-8 animate-fade-in-up">
           <div className="flex flex-col md:flex-row gap-4 items-center">
             <div className="flex-1 w-full">
@@ -177,7 +171,8 @@ export default function Home() {
         {/* Results Section */}
         <div className="mb-8">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
-            <FaClinicMedical className="text-indigo-600 mr-2" />
+            {/* <FaClinicMedical className="text-indigo-600 mr-2" /> */}
+            <FaTools className="text-indigo-600 mr-2" />
             {filteredDoctors.length}{" "}
             {filteredDoctors.length === 1 ? "Doctor" : "Doctors"} Found
           </h2>
@@ -228,7 +223,6 @@ export default function Home() {
           )}
         </div>
 
-        {/* CTA Section */}
         {!isLoading && filteredDoctors.length > 0 && (
           <div className="bg-indigo-600 rounded-xl p-8 text-center text-white animate-fade-in">
             <h3 className="text-2xl font-bold mb-2">Need Help Choosing?</h3>
@@ -240,7 +234,6 @@ export default function Home() {
         )}
       </div>
 
-      {/* Global CSS for animations */}
       <style jsx global>{`
         @keyframes fadeIn {
           from {

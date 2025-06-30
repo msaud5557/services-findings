@@ -1,9 +1,13 @@
 export const doctors = [
   {
     id: 20,
-    name: "Dr. Usman Malik",
-    specialty: "Orthopedic Surgeon",
-    services: ["Joint Replacement", "Arthroscopy", "Fracture Care"],
+    name: "Usman Malik",
+    specialty: "Electrician",
+    services: [
+      "Wiring Installation",
+      "Circuit Repair",
+      "Electrical Safety Inspection",
+    ],
     phone: "+923001234569",
     location: {
       lat: 31.399991,
@@ -14,9 +18,9 @@ export const doctors = [
   },
   {
     id: 21,
-    name: "Dr. Imran Siddiqui",
-    specialty: "Neurologist",
-    services: ["Brain MRI", "Stroke Care", "Epilepsy Treatment"],
+    name: "Imran Siddiqui",
+    specialty: "Plumber",
+    services: ["Pipe Installation", "Leak Repair", "Drain Cleaning"],
     phone: "+923001234580",
     location: {
       lat: 31.5204,
@@ -27,9 +31,13 @@ export const doctors = [
   },
   {
     id: 22,
-    name: "Dr. Rabia Hassan",
-    specialty: "ENT Specialist",
-    services: ["Sinus Surgery", "Hearing Loss", "Allergy Treatment"],
+    name: "Rabia Hassan",
+    specialty: "Bar Tap Specialist",
+    services: [
+      "Beer Line Cleaning",
+      "Tap Installation",
+      "Draft System Maintenance",
+    ],
     phone: "+923001234581",
     location: {
       lat: 31.522334,
@@ -40,9 +48,9 @@ export const doctors = [
   },
   {
     id: 23,
-    name: "Dr. Asad Mehmood",
-    specialty: "Ophthalmologist",
-    services: ["Eye Checkup", "Cataract Surgery", "Glaucoma Treatment"],
+    name: "Asad Mehmood",
+    specialty: "HVAC Technician",
+    services: ["AC Repair", "Heating Installation", "Ventilation Systems"],
     phone: "+923001234582",
     location: {
       lat: 31.393793,
@@ -53,9 +61,9 @@ export const doctors = [
   },
   {
     id: 24,
-    name: "Dr. Sana Tariq",
-    specialty: "Dentist",
-    services: ["Teeth Cleaning", "Braces", "Root Canal"],
+    name: "Sana Tariq",
+    specialty: "Carpenter",
+    services: ["Furniture Repair", "Cabinet Installation", "Wood Finishing"],
     phone: "+923001234583",
     location: {
       lat: 31.393793,
@@ -66,9 +74,13 @@ export const doctors = [
   },
   {
     id: 25,
-    name: "Dr. Kamran Javed",
-    specialty: "Psychiatrist",
-    services: ["Depression Treatment", "Anxiety Management", "Therapy"],
+    name: "Kamran Javed",
+    specialty: "Appliance Repair",
+    services: [
+      "Refrigerator Repair",
+      "Washing Machine Service",
+      "Oven Maintenance",
+    ],
     phone: "+923001234584",
     location: {
       lat: 31.398723,
@@ -79,9 +91,9 @@ export const doctors = [
   },
   {
     id: 26,
-    name: "Dr. Hina Qureshi",
-    specialty: "Nutritionist",
-    services: ["Diet Plan", "Weight Loss", "Diabetes Diet"],
+    name: "Hina Qureshi",
+    specialty: "Landscaper",
+    services: ["Lawn Care", "Garden Design", "Irrigation Systems"],
     phone: "+923001234585",
     location: {
       lat: 31.403646,
@@ -92,9 +104,13 @@ export const doctors = [
   },
   {
     id: 27,
-    name: "Dr. Salman Raza",
-    specialty: "Pulmonologist",
-    services: ["Asthma Care", "Lung Function Test", "COPD Treatment"],
+    name: "Salman Raza",
+    specialty: "Painter",
+    services: [
+      "Interior Painting",
+      "Exterior Coating",
+      "Wallpaper Installation",
+    ],
     phone: "+923001234586",
     location: {
       lat: 31.493234,
@@ -105,9 +121,9 @@ export const doctors = [
   },
   {
     id: 28,
-    name: "Dr. Nida Shah",
-    specialty: "Rheumatologist",
-    services: ["Arthritis Care", "Joint Pain", "Autoimmune Diseases"],
+    name: "Nida Shah",
+    specialty: "Locksmith",
+    services: ["Key Duplication", "Lock Installation", "Safe Opening"],
     phone: "+923001234587",
     location: {
       lat: 31.493234,
@@ -118,9 +134,9 @@ export const doctors = [
   },
   {
     id: 29,
-    name: "Dr. Farhan Ali",
-    specialty: "Urologist",
-    services: ["Kidney Stones", "Prostate Care", "UTI Treatment"],
+    name: "Farhan Ali",
+    specialty: "Roofing Specialist",
+    services: ["Shingle Repair", "Leak Detection", "Gutter Cleaning"],
     phone: "+923001234588",
     location: {
       lat: 31.516047,
@@ -131,13 +147,13 @@ export const doctors = [
   },
   {
     id: 30,
-    name: "Dr. Maham Iqbal",
-    specialty: "Oncologist",
-    services: ["Cancer Screening", "Chemotherapy", "Tumor Removal"],
+    name: "Maham Iqbal",
+    specialty: "Handyman",
+    services: ["General Repairs", "Home Maintenance", "Assembly Services"],
     phone: "+923001234589",
     location: {
-      lat: 31.516047,
-      lng: 74.343192,
+      lat: 31.403461,
+      lng: 74.158843,
     },
     rating: 4.9,
     experience: "15 years",
